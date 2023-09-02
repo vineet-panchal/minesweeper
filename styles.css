@@ -1,0 +1,191 @@
+:root {
+    --one: #508ae6;
+    --two: #50b043;
+    --three: #8f1818;
+    --four: #4e0f7a;
+    --five: #e0c31b;
+    --six: #914100;
+    --seven: #9c0394;
+    --eight: black;
+    --square: #171616;
+    --squareTopRight: #424040;
+    --squareBottomLeft: #202121;
+}
+
+
+body {
+/* Styling body tag with aligning content and adding background image */
+    background-image: url(images/landscape.png);
+    align-content: center; 
+}
+
+.container {
+/* Styling the container to position everything inside */
+    position: relative;
+    align-content: center;
+}
+
+.main-title {
+/* Styling the main title: Let's Play Minesweeper */
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    position: absolute;
+    left: 50%;
+    font-size: 10px;
+    top: 20px;
+    transform: translate(-50%, -50%);
+}
+
+/* Grid styling */
+
+.grid {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--square);
+    left: 50%;
+    top: 340px;
+    transform: translate(-50%, -50%);
+    
+}
+
+.grid div {
+    height: 30px;
+    width: 30px;
+}
+
+/* End of grid styling */
+
+/* Styling squares */
+
+.valid {
+    height: 30px;
+    width: 30px;
+    border: 5px solid;
+    border-color: var(--squareTopRight) var(--squareBottomLeft) var(--squareBottomLeft) var(--squareTopRight);
+    box-sizing: border-box;
+}
+
+.checked {
+    height: 30px;
+    width: 30px;
+    border: 2px solid;
+    background-color: #cecab7;
+    border-color: #9c998d;
+    box-sizing: border-box;
+}
+
+.bomb {
+    height: 30px;
+    width: 30px;
+    align-content: center;
+    border: 5px solid;
+    border-color: var(--squareTopRight) var(--squareBottomLeft) var(--squareBottomLeft) var(--squareTopRight);
+    box-sizing: border-box;
+}
+
+/* End Of Styling squares */
+
+/* Styling numbers */
+
+.one {
+    color: var(--one);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 25px;
+}
+
+.two {
+    color: var(--two);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 25px;
+}
+
+.three {
+    color: var(--three);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 25px;
+}
+
+.four {
+    color: var(--four);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 25px;
+}
+
+.five {
+    color: var(--five);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 25px;
+}
+
+.six {
+    color: var(--six);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 25px;
+}
+
+.seven {
+    color: var(--seven);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 25px;
+}
+
+.eight {
+    color: var(--eight);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 25px;
+}
+
+/* End of styling numbers */
+
+/* Styling extra headings */
+
+#result {
+/* Styling and positioning the result title */
+    font-family: 'Press Start 2P', cursive;
+    color: red;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    top: 690px;
+}
+
+#flags-left-title {
+/* Styling and positioning the flag's title */
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    position: absolute;
+    left: 50%;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+    top: 660px;
+}
+
+/* End of styling extra headings */
